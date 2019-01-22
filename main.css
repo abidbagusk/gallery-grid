@@ -1,3 +1,4 @@
+/* Hello guys. I wanna say sorry if i can't write with english language very well. i am still learning now :) */
 .main-font {
     font-family: 'Rubik', sans-serif;
 }
@@ -23,10 +24,10 @@ p {
 /* add style to wrapper class as container to all items grid */
 .wrapper {
     display: grid;
-    /* the meaning on this style is the page has automatic grid which is every grid has minimum 250px width and maximum is 1fr.  */
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    /* the meaning on this style is every grid has 250px height */
-    grid-auto-rows: 250px;
+    /* the meaning on this style is the page has automatic grid which is every grid has minimum 200px width and maximum is 1fr.  */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* the meaning on this style is every grid has 200px height */
+    grid-auto-rows: 200px;
     grid-gap: 5px;
     padding-top: 50px;
 }
@@ -35,4 +36,31 @@ p {
 .image-grid {
     height: 100%;
     width: 100%;
+}
+
+/* Let's make an image look like will be different each other */
+.wrapper>div:nth-child(1) {
+    /* image item on number 1 will span 2 line column */
+    grid-column: span 2;
+}
+
+.wrapper>div:nth-child(2) {
+    /* image item on number 2 will span 2 line row */
+    grid-row: span 2;
+}
+
+.wrapper>div:nth-child(3) {
+    /* image item on number 3 will span 2 line column and row */
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.wrapper>div:nth-child(7) {
+    /* image item on number 7 will span 2 line row */
+    grid-row: span 2;
+}
+
+.wrapper>div:nth-child(9) {
+    /* image item on number 9 will span 2 line columns */
+    grid-column: span 2;
 }
