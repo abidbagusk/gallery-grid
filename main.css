@@ -13,3 +13,8 @@ h1 {
     margin-bottom: 0px;
     text-shadow: 0.5px 1px red;
 }
+
+p {
+    color: red;
+    text-shadow: 0.5px 1px purple;
+}
