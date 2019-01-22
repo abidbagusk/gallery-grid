@@ -18,3 +18,21 @@ p {
     color: red;
     text-shadow: 0.5px 1px purple;
 }
+
+/*  Let's Create The Grid*/
+/* add style to wrapper class as container to all items grid */
+.wrapper {
+    display: grid;
+    /* the meaning on this style is the page has automatic grid which is every grid has minimum 250px width and maximum is 1fr.  */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* the meaning on this style is every grid has 250px height */
+    grid-auto-rows: 250px;
+    grid-gap: 5px;
+    padding-top: 50px;
+}
+
+/* The width and height on all images will be relative to wrapper. so we give the value on height and width are 100% */
+.image-grid {
+    height: 100%;
+    width: 100%;
+}
