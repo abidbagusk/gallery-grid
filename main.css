@@ -30,6 +30,8 @@ p {
     grid-auto-rows: 200px;
     grid-gap: 5px;
     padding-top: 50px;
+    /* you have add this property and value to fill empty grid */
+    grid-auto-flow: dense;
 }
 
 /* The width and height on all images will be relative to wrapper. so we give the value on height and width are 100% */
