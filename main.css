@@ -36,6 +36,8 @@ p {
 .image-grid {
     height: 100%;
     width: 100%;
+    /* add object-fit property to the image */
+    object-fit: cover;
 }
 
 /* Let's make an image look like will be different each other */
