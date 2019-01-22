@@ -1,3 +1,8 @@
 .main-font {
     font-family: 'Rubik', sans-serif;
 }
+
+h1,
+p {
+    text-align: center;
+}
