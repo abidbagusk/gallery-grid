@@ -60,3 +60,17 @@ p {
     grid-row: span 2;
     grid-column: span 2;
 }
+
+/* this css will active when user click on the button */
+.bigDiv {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.widthDiv {
+    grid-column: span 2;
+}
+
+.heightDiv {
+    grid-row: span 2;
+}
