@@ -22,3 +22,17 @@ addDiv.addEventListener('click', function () {
 // ------------ Create Big Content ------------------
 // 1. catch button id
 const addDivBig = document.getElementById('add-big-div');
+// 2. add Event to the button
+addDivBig.addEventListener('click', function () {
+    // 2.1 catch the parent of the element.
+    // 2.2 create new big div
+    const bigDiv = document.createElement('div');
+    // 2.3 create image
+    const image = document.createElement('img');
+    image.setAttribute('src', 'https://source.unsplash.com/random');
+    image.classList.add('image-grid');
+    // 2.4 put image to bigDiv
+    bigDiv.appendChild(image);
+    // 2.5 save to parent
+    wrapper.appendChild(bigDiv);
+});
