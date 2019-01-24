@@ -27,6 +27,8 @@ addDivBig.addEventListener('click', function () {
     // 2.1 catch the parent of the element.
     // 2.2 create new big div
     const bigDiv = document.createElement('div');
+    // 2.3 give bigDiv class to div
+    bigDiv.classList.add('bigDiv');
     // 2.3 create image
     const image = document.createElement('img');
     image.setAttribute('src', 'https://source.unsplash.com/random');
