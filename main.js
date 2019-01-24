@@ -41,6 +41,19 @@ addDivBig.addEventListener('click', function () {
 // ------------- Create Width Content -------------------
 const addDivWidth = document.getElementById('add-length-div');
 addDivWidth.addEventListener('click', function () {
+    // create div elemen
     const divWidth = document.createElement('div');
-    divWidth.classList.add('widthDiv')
+    divWidth.classList.add('widthDiv');
+
+    // create image element
+    const image = document.createElement('img');
+    image.setAttribute('src', 'https://source.unsplash.com/random');
+    image.classList.add('image-grid');
+
+    // put image to divWidth
+    divWidth.appendChild(image);
+
+    // save to parent
+    wrapper.appendChild(divWidth);
+
 });
