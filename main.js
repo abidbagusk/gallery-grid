@@ -63,3 +63,23 @@ addDivWidth.addEventListener('click', function () {
     wrapper.appendChild(divWidth);
 
 });
+
+// --------------- Create Height Content -----------------
+const addDivHeight = document.getElementById('add-height-div');
+addDivHeight.addEventListener('click', function () {
+    // create div element
+    const divHeight = document.createElement('div');
+    divHeight.classList.add('heightDiv');
+
+    // create image element
+    const image = document.createElement('img');
+    image.setAttribute('src', 'https://source.unsplash.com/random');
+    image.classList.add('image-grid');
+
+    // put image to the div
+    divHeight.appendChild(image);
+
+    // save to parent
+    wrapper.appendChild(divHeight);
+
+});
