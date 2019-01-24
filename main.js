@@ -38,3 +38,5 @@ addDivBig.addEventListener('click', function () {
     // 2.5 save to parent
     wrapper.appendChild(bigDiv);
 });
+// ------------- Create Width Content -------------------
+const addDivWidth = document.getElementById('add-length-div');
