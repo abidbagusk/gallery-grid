@@ -10,6 +10,8 @@ addDiv.addEventListener('click', function () {
     // const container = document.querySelector('.container');
     // 2.2 create new small div
     const smallDiv = document.createElement('div');
+    // add div-content as sign if user will click delete button
+    smallDiv.classList.add('div-content');
     // 2.3 create image
     const image = document.createElement('img');
     image.setAttribute('src', 'https://source.unsplash.com/random');
@@ -30,7 +32,7 @@ addDivBig.addEventListener('click', function () {
     const bigDiv = document.createElement('div');
 
     // give bigDiv class to div
-    bigDiv.classList.add('bigDiv');
+    bigDiv.classList.add('bigDiv', 'div-content');
 
     // create image
     const image = document.createElement('img');
@@ -49,7 +51,7 @@ const addDivWidth = document.getElementById('add-length-div');
 addDivWidth.addEventListener('click', function () {
     // create div elemen
     const divWidth = document.createElement('div');
-    divWidth.classList.add('widthDiv');
+    divWidth.classList.add('widthDiv', 'div-content');
 
     // create image element
     const image = document.createElement('img');
@@ -69,7 +71,7 @@ const addDivHeight = document.getElementById('add-height-div');
 addDivHeight.addEventListener('click', function () {
     // create div element
     const divHeight = document.createElement('div');
-    divHeight.classList.add('heightDiv');
+    divHeight.classList.add('heightDiv', 'div-content');
 
     // create image element
     const image = document.createElement('img');
@@ -83,3 +85,12 @@ addDivHeight.addEventListener('click', function () {
     wrapper.appendChild(divHeight);
 
 });
+
+
+// ------------- Create Function to Delete item --------------
+// catch button delete
+const deleteDiv = document.getElementById('delete-div');
+deleteDiv.addEventListener('click', function () {
+    const newDiv = document.getElementsByClassName('div-content')[0];
+    wrapper.removeChild(newDiv);
+})
