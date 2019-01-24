@@ -1,5 +1,7 @@
 // script for create normal div
 const wrapper = document.querySelector('.wrapper');
+
+// ------------ Create Normal Content ---------------
 // 1. catch button id
 const addDiv = document.getElementById('add-small-div');
 // 2. add Event to the button
@@ -17,3 +19,6 @@ addDiv.addEventListener('click', function () {
     // 2.5 save to parent
     wrapper.appendChild(smallDiv);
 });
+// ------------ Create Big Content ------------------
+// 1. catch button id
+const addDivBig = document.getElementById('add-big-div');
