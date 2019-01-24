@@ -60,13 +60,3 @@ p {
     grid-row: span 2;
     grid-column: span 2;
 }
-
-.wrapper>div:nth-child(7) {
-    /* image item on number 7 will span 2 line row */
-    grid-row: span 2;
-}
-
-.wrapper>div:nth-child(9) {
-    /* image item on number 9 will span 2 line columns */
-    grid-column: span 2;
-}
