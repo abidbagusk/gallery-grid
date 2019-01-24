@@ -2,45 +2,50 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Grid Gallery</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Grid Gallery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 </head>
 
 <body>
-    <h1 class="main-font">Responsive Gallery Grid</h1>
-    <p class="main-font">CSS Grid - Awesome Grid</p>
-    <div class="wrapper">
-        <div><img src="https://images.unsplash.com/photo-1548097341-3d7b4821f984?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=893&q=80"
-                alt="" class="image-grid"></div>
-        <div><img src="https://images.unsplash.com/photo-1513949753947-6e8080db3fa6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-                alt="" class="image-grid"></div>
-        <div><img src="https://images.unsplash.com/photo-1484081064812-86e90e107fa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-                alt="" class="image-grid"></div>
-        <div><img src="https://images.unsplash.com/photo-1491864483946-1f06be97b71d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
-                alt="" class="image-grid"></div>
-        <div><img src="https://images.unsplash.com/photo-1521458634394-4829d38b57f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-                alt="" class="image-grid"></div>
-        <div><img src="https://images.unsplash.com/photo-1496939503932-f773e550e796?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-                alt="" class="image-grid"></div>
-        <div><img src="https://images.unsplash.com/photo-1485487656106-d6aa01db3271?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1012&q=80"
-                alt="" class="image-grid"></div>
-        <div><img src="https://images.unsplash.com/photo-1502685904007-66914fdd9118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-                alt="" class="image-grid"></div>
-        <div><img src="https://images.unsplash.com/photo-1502780787199-5bdc5502db3f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1072&q=80"
-                alt="" class="image-grid"></div>
-        <div><img src="https://images.unsplash.com/photo-1490049350474-498de43bc885?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1013&q=80"
-                alt="" class="image-grid"></div>
-        <div><img src="https://images.unsplash.com/photo-1527698952067-61fc35796fcd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1190&q=80"
-                alt="" class="image-grid"></div>
-        <div><img src="https://images.unsplash.com/photo-1490380169520-0a4b88d52565?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-                alt="" class="image-grid"></div>
-    </div>
+        <h1 class="main-font">Responsive Gallery Grid</h1>
+        <p class="main-font">CSS Grid - Awesome Grid</p>
+        <button id="add-small-div">Add Small Content</button>
+        <button id="add-big-div">Add Big Content</button>
+        <button id="add-length-div">Add Width Div</button>
+        <button id="add-height-div">Add Height Div</button>
+        <button id="delete-div">Delete Div</button>
+        <div class="wrapper">
+                <div><img src="https://images.unsplash.com/photo-1548097341-3d7b4821f984?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=893&q=80"
+                                alt="" class="image-grid"></div>
+                <div><img src="https://images.unsplash.com/photo-1513949753947-6e8080db3fa6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                alt="" class="image-grid"></div>
+                <div><img src="https://images.unsplash.com/photo-1484081064812-86e90e107fa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                alt="" class="image-grid"></div>
+                <div><img src="https://images.unsplash.com/photo-1491864483946-1f06be97b71d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
+                                alt="" class="image-grid"></div>
+                <div><img src="https://images.unsplash.com/photo-1521458634394-4829d38b57f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                alt="" class="image-grid"></div>
+                <div><img src="https://images.unsplash.com/photo-1496939503932-f773e550e796?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                alt="" class="image-grid"></div>
+                <div><img src="https://images.unsplash.com/photo-1485487656106-d6aa01db3271?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1012&q=80"
+                                alt="" class="image-grid"></div>
+                <div><img src="https://images.unsplash.com/photo-1502685904007-66914fdd9118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                alt="" class="image-grid"></div>
+                <div><img src="https://images.unsplash.com/photo-1502780787199-5bdc5502db3f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1072&q=80"
+                                alt="" class="image-grid"></div>
+                <div><img src="https://images.unsplash.com/photo-1490049350474-498de43bc885?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1013&q=80"
+                                alt="" class="image-grid"></div>
+                <div><img src="https://images.unsplash.com/photo-1527698952067-61fc35796fcd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1190&q=80"
+                                alt="" class="image-grid"></div>
+                <div><img src="https://images.unsplash.com/photo-1490380169520-0a4b88d52565?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                alt="" class="image-grid"></div>
+        </div>
 </body>
 
 </html>
