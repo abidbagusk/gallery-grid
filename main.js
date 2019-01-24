@@ -40,3 +40,6 @@ addDivBig.addEventListener('click', function () {
 });
 // ------------- Create Width Content -------------------
 const addDivWidth = document.getElementById('add-length-div');
+addDivWidth.addEventListener('click', function () {
+
+});
